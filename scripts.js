@@ -192,7 +192,7 @@ function addPerson(inputs){
       return response.json();
     })
     .then((data) => {
-      htmlListElement += CreatePerson(data);
+      htmlListElement.innerHTML += CreatePerson(data)
     })
     alert(`La persona fue agregada satisfactoriamente`);
 }
